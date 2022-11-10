@@ -1,0 +1,64 @@
+:root {
+  --cor: #6a00d598;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--cor);
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border-color: var(--cor);
+  background-color: var(--cor);
+  color: white;
+  font-size: 18px;
+  transition: 200ms transform;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tabuleiro {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+}
+
+.quadro {
+  cursor: pointer;
+  width: 118px;
+  height: 120px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.borda-embaixo {
+  border-bottom: 3px solid var(--cor);
+}
+
+.borda-esquerda {
+  border-left: 3px solid var(--cor);
+}
